@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NataFin - Tambah Transaksi</title>
+</head>
+
+<body>
+    <header>
+        <h1>NataFin</h1>
+        <p>Tambahkan transaksi keuangan.</p>
+
+        <nav>
+            <a href="index.html">Dashboard</a> |
+            <a href="transaksi.html">Tambah Transaksi</a> |
+            <a href="detail.html">Detail Keuangan</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Tambah Transaksi</h2>
+
+            <img src="https://placehold.co/600x200?text=Tambah+Transaksi" width="600" height="200"
+                alt="Ilustrasi halaman tambah transaksi NataFin">
+
+            <p>
+                Masukkan informasi transaksi yang ingin dicatat ke dalam NataFin.
+            </p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="jenis">Jenis Transaksi:</label>
+                    <select id="jenis" name="jenis">
+                        <option value="pemasukan">Pemasukan</option>
+                        <option value="pengeluaran">Pengeluaran</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori">
+                        <option value="makanan">Makanan</option>
+                        <option value="transportasi">Transportasi</option>
+                        <option value="pendidikan">Pendidikan</option>
+                        <option value="hiburan">Hiburan</option>
+                        <option value="belanja">Belanja</option>
+                        <option value="tagihan">Tagihan</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="nominal">Nominal:</label>
+                    <input type="text" id="nominal" name="nominal" placeholder="Masukkan nominal">
+                </p>
+
+                <p>
+                    <label for="keterangan">Keterangan:</label>
+                    <textarea id="keterangan" name="keterangan" rows="5" cols="40"
+                        placeholder="Masukkan keterangan transaksi"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Simpan Transaksi</button>
+                </p>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NataFin</p>
+    </footer>
+</body>
+
+</html>
