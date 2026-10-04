@@ -5,73 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NataFin - Tambah Transaksi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>NataFin</h1>
-        <p>Tambahkan transaksi keuangan.</p>
+        <div class="container navbar">
+            <a class="brand" href="index.html">NataFin</a>
 
-        <nav>
-            <a href="index.html">Dashboard</a> |
-            <a href="transaksi.html">Tambah Transaksi</a> |
-            <a href="detail.html">Detail Keuangan</a>
-        </nav>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Dashboard</a></li>
+                    <li><a class="nav-link" href="transaksi.html">Tambah Transaksi</a></li>
+                    <li><a class="nav-link" href="detail.html">Detail Keuangan</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article>
-            <h2>Tambah Transaksi</h2>
+        <div class="container">
+            <article>
+                <h2>Tambah Transaksi</h2>
 
-            <img src="https://placehold.co/600x200?text=Tambah+Transaksi" width="600" height="200"
-                alt="Ilustrasi halaman tambah transaksi NataFin">
-
-            <p>
-                Masukkan informasi transaksi yang ingin dicatat ke dalam NataFin.
-            </p>
-
-            <form action="#" method="post">
-                <p>
-                    <label for="jenis">Jenis Transaksi:</label>
-                    <select id="jenis" name="jenis">
-                        <option value="pemasukan">Pemasukan</option>
-                        <option value="pengeluaran">Pengeluaran</option>
-                    </select>
+                <p class="page-intro">
+                    Masukkan informasi transaksi yang ingin dicatat ke dalam NataFin.
                 </p>
 
-                <p>
-                    <label for="kategori">Kategori:</label>
-                    <select id="kategori" name="kategori">
-                        <option value="makanan">Makanan</option>
-                        <option value="transportasi">Transportasi</option>
-                        <option value="pendidikan">Pendidikan</option>
-                        <option value="hiburan">Hiburan</option>
-                        <option value="belanja">Belanja</option>
-                        <option value="tagihan">Tagihan</option>
-                        <option value="lainnya">Lainnya</option>
-                    </select>
-                </p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="jenis">Jenis Transaksi:</label>
+                        <select id="jenis" name="jenis">
+                            <option value="pemasukan">Pemasukan</option>
+                            <option value="pengeluaran">Pengeluaran</option>
+                        </select>
+                    </div>
 
-                <p>
-                    <label for="nominal">Nominal:</label>
-                    <input type="text" id="nominal" name="nominal" placeholder="Masukkan nominal">
-                </p>
+                    <div class="form-group">
+                        <label class="form-label" for="kategori">Kategori:</label>
+                        <select id="kategori" name="kategori">
+                            <option value="makanan">Makanan</option>
+                            <option value="transportasi">Transportasi</option>
+                            <option value="pendidikan">Pendidikan</option>
+                            <option value="hiburan">Hiburan</option>
+                            <option value="belanja">Belanja</option>
+                            <option value="tagihan">Tagihan</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
 
-                <p>
-                    <label for="keterangan">Keterangan:</label>
-                    <textarea id="keterangan" name="keterangan" rows="5" cols="40"
-                        placeholder="Masukkan keterangan transaksi"></textarea>
-                </p>
+                    <div class="form-group">
+                        <label class="form-label" for="nominal">Nominal:</label>
+                        <input type="text" id="nominal" name="nominal" placeholder="Masukkan nominal">
+                    </div>
 
-                <p>
-                    <button type="submit">Simpan Transaksi</button>
-                </p>
-            </form>
-        </article>
+                    <div class="form-group">
+                        <label class="form-label" for="keterangan">Keterangan:</label>
+                        <textarea id="keterangan" name="keterangan" rows="5" cols="40"
+                            placeholder="Masukkan keterangan transaksi"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Simpan Transaksi</button>
+                    </div>
+                </form>
+            </article>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 NataFin</p>
+        <div class="container">
+            <p>&copy; 2026 NataFin</p>
+        </div>
     </footer>
 </body>
 

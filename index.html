@@ -5,106 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NataFin - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>NataFin</h1>
-        <p>Aplikasi pengelolaan keuangan sehari-hari.</p>
+        <div class="container navbar">
+            <a class="brand" href="index.html">NataFin</a>
 
-        <nav>
-            <a href="index.html">Dashboard</a> |
-            <a href="transaksi.html">Tambah Transaksi</a> |
-            <a href="detail.html">Detail Keuangan</a>
-        </nav>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Dashboard</a></li>
+                    <li><a class="nav-link" href="transaksi.html">Tambah Transaksi</a></li>
+                    <li><a class="nav-link" href="detail.html">Detail Keuangan</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article>
-            <h2>Selamat Datang di NataFin</h2>
+        <div class="container">
+            <article>
+                <h2>Selamat Datang di NataFin</h2>
 
-            <img src="https://placehold.co/600x200?text=NataFin" width="600" height="200"
-                alt="Logo NataFin sebagai aplikasi pengelolaan keuangan">
+                <img class="logo" src="images/logo_natafin.png" alt="Logo NataFin">
 
-            <p>
-                NataFin merupakan aplikasi pengelolaan keuangan sehari-hari
-                yang membantu pengguna mencatat pemasukan dan pengeluaran
-                serta memantau target tabungan.
-            </p>
-        </article>
+                <p class="page-intro">
+                    NataFin merupakan aplikasi pengelolaan keuangan sehari-hari
+                    yang membantu pengguna mencatat pemasukan dan pengeluaran
+                    serta memantau <span class="highlight">target tabungan</span>.
+                </p>
+            </article>
 
-        <article>
-            <h2>Ringkasan Keuangan</h2>
+            <article>
+                <h2>Ringkasan Keuangan</h2>
 
-            <table border="1">
-                <tr>
-                    <th>Keterangan</th>
-                    <th>Jumlah</th>
-                </tr>
-                <tr>
-                    <td>Total Pemasukan</td>
-                    <td>Rp1.500.000</td>
-                </tr>
-                <tr>
-                    <td>Total Pengeluaran</td>
-                    <td>Rp500.000</td>
-                </tr>
-                <tr>
-                    <td>Total Tabungan</td>
-                    <td>Rp500.000</td>
-                </tr>
-                <tr>
-                    <td>Sisa Saldo</td>
-                    <td>Rp500.000</td>
-                </tr>
-            </table>
-        </article>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <h3>Total Pemasukan</h3>
+                        <span class="amount">Rp1.500.000</span>
+                    </div>
 
-        <article>
-            <h2>Daftar Transaksi</h2>
+                    <div class="summary-card">
+                        <h3>Total Pengeluaran</h3>
+                        <span class="amount">Rp500.000</span>
+                    </div>
 
-            <table border="1">
-                <tr>
-                    <th>Tanggal</th>
-                    <th>Jenis</th>
-                    <th>Kategori</th>
-                    <th>Keterangan</th>
-                    <th>Nominal</th>
-                </tr>
-                <tr>
-                    <td>26 September 2026</td>
-                    <td>Pengeluaran</td>
-                    <td>Makanan</td>
-                    <td>Makan siang</td>
-                    <td>Rp25.000</td>
-                </tr>
-                <tr>
-                    <td>25 September 2026</td>
-                    <td>Pengeluaran</td>
-                    <td>Transportasi</td>
-                    <td>Ojek online</td>
-                    <td>Rp18.000</td>
-                </tr>
-                <tr>
-                    <td>24 September 2026</td>
-                    <td>Pemasukan</td>
-                    <td>Uang Saku</td>
-                    <td>Uang bulanan</td>
-                    <td>Rp1.500.000</td>
-                </tr>
-                <tr>
-                    <td>23 September 2026</td>
-                    <td>Pengeluaran</td>
-                    <td>Pendidikan</td>
-                    <td>Membeli buku</td>
-                    <td>Rp75.000</td>
-                </tr>
-            </table>
-        </article>
+                    <div class="summary-card">
+                        <h3>Total Tabungan</h3>
+                        <span class="amount">Rp500.000</span>
+                    </div>
+
+                    <div class="summary-card">
+                        <h3>Sisa Saldo</h3>
+                        <span class="amount">Rp500.000</span>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Daftar Transaksi</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Jenis</th>
+                            <th>Kategori</th>
+                            <th>Keterangan</th>
+                            <th>Nominal</th>
+                        </tr>
+                        <tr>
+                            <td>26 September 2026</td>
+                            <td>Pengeluaran</td>
+                            <td>Makanan</td>
+                            <td>Makan siang</td>
+                            <td>Rp25.000</td>
+                        </tr>
+                        <tr>
+                            <td>25 September 2026</td>
+                            <td>Pengeluaran</td>
+                            <td>Transportasi</td>
+                            <td>Ojek online</td>
+                            <td>Rp18.000</td>
+                        </tr>
+                        <tr>
+                            <td>24 September 2026</td>
+                            <td>Pemasukan</td>
+                            <td>Uang Saku</td>
+                            <td>Uang bulanan</td>
+                            <td>Rp1.500.000</td>
+                        </tr>
+                        <tr>
+                            <td>23 September 2026</td>
+                            <td>Pengeluaran</td>
+                            <td>Pendidikan</td>
+                            <td>Membeli buku</td>
+                            <td>Rp75.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 NataFin</p>
+        <div class="container">
+            <p>&copy; 2026 NataFin</p>
+        </div>
     </footer>
 </body>
 

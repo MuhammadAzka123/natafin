@@ -5,128 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NataFin - Detail Keuangan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>NataFin</h1>
-        <p>Detail dan informasi keuangan.</p>
+        <div class="container navbar">
+            <a class="brand" href="index.html">NataFin</a>
 
-        <nav>
-            <a href="index.html">Dashboard</a> |
-            <a href="transaksi.html">Tambah Transaksi</a> |
-            <a href="detail.html">Detail Keuangan</a>
-        </nav>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Dashboard</a></li>
+                    <li><a class="nav-link" href="transaksi.html">Tambah Transaksi</a></li>
+                    <li><a class="nav-link" href="detail.html">Detail Keuangan</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article>
-            <h2>Detail Keuangan September 2026</h2>
+        <div class="container">
+            <article>
+                <h2>Detail Keuangan September 2026</h2>
 
-            <img src="https://placehold.co/600x200?text=Detail+Keuangan" width="600" height="200"
-                alt="Ilustrasi halaman detail keuangan NataFin">
+                <p class="page-intro">
+                    Berikut merupakan ringkasan kondisi keuangan selama bulan
+                    September 2026.
+                </p>
 
-            <p>
-                Berikut merupakan ringkasan kondisi keuangan selama bulan
-                September 2026.
-            </p>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th colspan="2">Ringkasan Keuangan</th>
+                        </tr>
+                        <tr>
+                            <td>Total Pemasukan</td>
+                            <td>Rp1.500.000</td>
+                        </tr>
+                        <tr>
+                            <td>Total Pengeluaran</td>
+                            <td>Rp500.000</td>
+                        </tr>
+                        <tr>
+                            <td>Total Tabungan</td>
+                            <td>Rp500.000</td>
+                        </tr>
+                        <tr>
+                            <td>Sisa Saldo</td>
+                            <td>Rp500.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
 
-            <table border="1">
-                <tr>
-                    <th colspan="2">Ringkasan Keuangan</th>
-                </tr>
-                <tr>
-                    <td>Total Pemasukan</td>
-                    <td>Rp1.500.000</td>
-                </tr>
-                <tr>
-                    <td>Total Pengeluaran</td>
-                    <td>Rp500.000</td>
-                </tr>
-                <tr>
-                    <td>Total Tabungan</td>
-                    <td>Rp500.000</td>
-                </tr>
-                <tr>
-                    <td>Sisa Saldo</td>
-                    <td>Rp500.000</td>
-                </tr>
-            </table>
-        </article>
+            <article>
+                <h2>Target Tabungan</h2>
 
-        <article>
-            <h2>Target Tabungan</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Target</th>
+                            <th>Jumlah Target</th>
+                            <th>Terkumpul</th>
+                            <th>Kekurangan</th>
+                        </tr>
+                        <tr>
+                            <td>Laptop Baru</td>
+                            <td>Rp10.000.000</td>
+                            <td>Rp4.000.000</td>
+                            <td>Rp6.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Liburan</td>
+                            <td>Rp3.000.000</td>
+                            <td>Rp1.500.000</td>
+                            <td>Rp1.500.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
 
-            <table border="1">
-                <tr>
-                    <th>Target</th>
-                    <th>Jumlah Target</th>
-                    <th>Terkumpul</th>
-                    <th>Kekurangan</th>
-                </tr>
-                <tr>
-                    <td>Laptop Baru</td>
-                    <td>Rp10.000.000</td>
-                    <td>Rp4.000.000</td>
-                    <td>Rp6.000.000</td>
-                </tr>
-                <tr>
-                    <td>Liburan</td>
-                    <td>Rp3.000.000</td>
-                    <td>Rp1.500.000</td>
-                    <td>Rp1.500.000</td>
-                </tr>
-            </table>
-        </article>
+            <article>
+                <h2>Rincian Pengeluaran</h2>
 
-        <article>
-            <h2>Rincian Pengeluaran</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Jumlah</th>
+                        </tr>
+                        <tr>
+                            <td>Makanan</td>
+                            <td>Rp700.000</td>
+                        </tr>
+                        <tr>
+                            <td>Transportasi</td>
+                            <td>Rp300.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pendidikan</td>
+                            <td>Rp250.000</td>
+                        </tr>
+                        <tr>
+                            <td>Hiburan</td>
+                            <td>Rp200.000</td>
+                        </tr>
+                        <tr>
+                            <td>Lainnya</td>
+                            <td>Rp400.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
 
-            <table border="1">
-                <tr>
-                    <th>Kategori</th>
-                    <th>Jumlah</th>
-                </tr>
-                <tr>
-                    <td>Makanan</td>
-                    <td>Rp700.000</td>
-                </tr>
-                <tr>
-                    <td>Transportasi</td>
-                    <td>Rp300.000</td>
-                </tr>
-                <tr>
-                    <td>Pendidikan</td>
-                    <td>Rp250.000</td>
-                </tr>
-                <tr>
-                    <td>Hiburan</td>
-                    <td>Rp200.000</td>
-                </tr>
-                <tr>
-                    <td>Lainnya</td>
-                    <td>Rp400.000</td>
-                </tr>
-            </table>
-        </article>
+            <article>
+                <h2>Informasi Pengembangan</h2>
 
-        <article>
-            <h2>Informasi Pengembangan</h2>
+                <p class="page-intro">
+                    NataFin akan dikembangkan secara bertahap untuk membantu
+                    pengguna mengelola keuangan sehari-hari dan memantau
+                    target tabungan.
+                </p>
 
-            <p>
-                NataFin akan dikembangkan secara bertahap untuk membantu
-                pengguna mengelola keuangan sehari-hari dan memantau target
-                tabungan.
-            </p>
-
-            <p>
-                <a href="index.html">Kembali ke Dashboard</a>
-            </p>
-        </article>
+                <p>
+                    <a class="content-link" href="index.html">Kembali ke Dashboard</a>
+                </p>
+            </article>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 NataFin</p>
+        <div class="container">
+            <p>&copy; 2026 NataFin</p>
+        </div>
     </footer>
 </body>
 
